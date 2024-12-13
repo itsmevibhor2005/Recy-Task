@@ -13,6 +13,7 @@ This project is a simple web application that utilizes HTML, CSS, and JavaScript
 
 1. Clone the repository to your local machine.
 2. Open the `index.html` file in your preferred web browser.
+3. To see the "Happy New Year" message simply comment down the 3rd line and uncomment the 4th line of sript.js.
 
 ## Features
 
