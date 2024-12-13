@@ -1,6 +1,7 @@
 const NewYearCountdown = () =>{
     const present = new Date();
     const newYear = new Date(`January 1, ${present.getFullYear()+1} 00:00:00`);
+    // const newYear = new Date()
    
 
     const timeDifference = newYear - present;
@@ -9,8 +10,6 @@ const NewYearCountdown = () =>{
     const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60)); 
     const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
-
-    // console.log(days, hours, minutes, seconds);
 
     document.getElementById('days').innerText = days.toString().length === 1 ? '0' + days : days;
     document.getElementById('hours').innerText = hours.toString().length === 1 ? '0' + hours : hours;
